@@ -8,7 +8,7 @@ from app.schemas.url import (
     URLListResponse,
     DeleteResponse
 )
-from app.services.url_service import (
+from app.services.url_services import (
     create_short_url,
     get_user_urls,
     soft_delete_url
