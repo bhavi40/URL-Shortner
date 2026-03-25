@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import create_async_engine, async_sessionmaker
 from app.main import app
 from app.db.database import Base, get_db
 
-TEST_DATABASE_URL = "postgresql+asyncpg://postgres:password@localhost:5432/urlshortener_test"
+TEST_DATABASE_URL = "postgresql+asyncpg://shortener_user:shortener_pass@127.0.0.1:5432/urlshortener_test"
 
 async def override_get_db():
     engine = create_async_engine(TEST_DATABASE_URL, echo=False)
